@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: bisque;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation: marquee 5s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+#a {
+    text-align: center;
+    bottom: 10px;
+}
